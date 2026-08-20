@@ -1,0 +1,38 @@
+# Zależności
+node_modules/
+
+# System operacyjny
+.DS_Store
+Thumbs.db
+*.log
+
+# Środowisko / sekrety
+.env
+.env.local
+.env.*.local
+
+# iCloud
+*.icloud
+
+# Materiały klientów — NIE commitujemy do repo systemu/kursu.
+# Wrażliwe dane osób trzecich (zdjęcia medyczne, głosówki), sekrety w czatach, ciężkie media.
+# Trzymaj je w osobnym, prywatnym repo per klient.
+Klienci/
+
+# Lokalna konfiguracja podglądu (per maszyna)
+.claude/launch.json
+
+# UWAGA: starter-theme/dist/ commitujemy świadomie (serwer nie buduje) — patrz szablony-startowe/README.md
+
+# Podglądy weryfikacyjne (per maszyna)
+_verify/
+
+# Materiały prowadzącego — tylko lokalnie, kursanci ich nie dostają
+SZKOLENIE-LIVE-SCIAGA.md
+
+# Kopia plików systemowych sprzed aktualizacji (tworzy ją aktualizuj.sh)
+_kopia-przed-aktualizacja/
+
+# Robocze artefakty agenta (paczki motywow, jednorazowe importery) — nie trafiaja do repo kursu
+*.zip
+importer*.php
